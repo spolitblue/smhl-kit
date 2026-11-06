@@ -1,0 +1,31 @@
+{
+  "name": "smhl-kit",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "social-media-hacker-list 工具箱：把 README 解析成结构化数据，并提供筛选、检索、链接体检、上游对比与离线可视化面板",
+  "bin": {
+    "smhl": "./smhl.mjs"
+  },
+  "scripts": {
+    "parse": "node parse.mjs",
+    "menu": "node menu.mjs",
+    "verify": "node verify.mjs",
+    "list": "node smhl.mjs list",
+    "search": "node smhl.mjs search",
+    "show": "node smhl.mjs show",
+    "stats": "node smhl.mjs stats",
+    "domains": "node smhl.mjs domains",
+    "rand": "node smhl.mjs rand -k 3",
+    "check": "node smhl.mjs check",
+    "check:github": "node smhl.mjs check --only github",
+    "diff": "node smhl.mjs diff",
+    "update": "node smhl.mjs update --commit",
+    "dashboard": "node smhl.mjs dashboard",
+    "export:md": "node smhl.mjs export md -o 工具清单.md",
+    "export:csv": "node smhl.mjs export csv -o 工具清单.csv"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

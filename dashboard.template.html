@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>社媒工具清单 · 工具箱</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #171a21;
+    --panel2: #1e222b;
+    --line: #2a2f3a;
+    --text: #e6e9ef;
+    --muted: #8b93a7;
+    --accent: #4f9cf9;
+    --cat-alternative-client: #a78bfa;
+    --cat-analytics-data: #fb923c;
+    --cat-bots: #94a3b8;
+    --cat-content-creation: #60a5fa;
+    --cat-for-developers: #c08457;
+    --cat-image: #4ade80;
+    --cat-productivity-tools: #facc15;
+    --cat-video: #f87171;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 14px/1.5 -apple-system, "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+  }
+  header { padding: 20px 22px 12px; border-bottom: 1px solid var(--line); }
+  h1 { margin: 0 0 6px; font-size: 20px; letter-spacing: .5px; }
+  .meta { color: var(--muted); font-size: 12px; }
+  .meta a { color: var(--accent); text-decoration: none; }
+  .toolbar {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    padding: 12px 22px; border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; background: rgba(15,17,21,.94); backdrop-filter: blur(6px); z-index: 5;
+  }
+  input[type=search], select, button {
+    background: var(--panel2); color: var(--text); border: 1px solid var(--line);
+    border-radius: 8px; padding: 7px 10px; font: inherit; outline: none;
+  }
+  input[type=search] { flex: 1 1 260px; min-width: 200px; }
+  input[type=search]:focus, select:focus { border-color: var(--accent); }
+  button { cursor: pointer; }
+  button:hover, select:hover { border-color: #3d4657; }
+  label.chk {
+    display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px;
+    background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; cursor: pointer; user-select: none;
+  }
+  label.chk input { accent-color: var(--accent); }
+  #count { padding: 12px 22px 0; color: var(--muted); font-size: 13px; }
+  #count b { color: var(--text); }
+  main {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 12px; padding: 14px 22px 48px;
+  }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px; display: flex; flex-direction: column; gap: 8px;
+  }
+  .card:hover { border-color: #3d4657; }
+  .name { font-size: 15px; font-weight: 600; color: var(--text); text-decoration: none; }
+  .name:hover { color: var(--accent); }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; }
+  .badge {
+    font-size: 11px; padding: 2px 8px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted); white-space: nowrap;
+  }
+  .badge.cat { color: #0f1115; font-weight: 600; border-color: transparent; background: var(--muted); }
+  .badge[data-cat=alternative-client] { background: var(--cat-alternative-client); }
+  .badge[data-cat=analytics-data] { background: var(--cat-analytics-data); }
+  .badge[data-cat=bots] { background: var(--cat-bots); }
+  .badge[data-cat=content-creation] { background: var(--cat-content-creation); }
+  .badge[data-cat=for-developers] { background: var(--cat-for-developers); }
+  .badge[data-cat=image] { background: var(--cat-image); }
+  .badge[data-cat=productivity-tools] { background: var(--cat-productivity-tools); }
+  .badge[data-cat=video] { background: var(--cat-video); }
+  .badge.oss { border-color: #2f6b46; color: #6ee7a0; }
+  .desc { margin: 0; color: #c3c9d6; font-size: 13px; }
+  .targets { color: var(--muted); font-size: 12px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 4px; }
+  .actions a, .actions button {
+    font-size: 12px; padding: 4px 9px; border-radius: 7px;
+    background: var(--panel2); border: 1px solid var(--line); color: var(--muted);
+    text-decoration: none; cursor: pointer;
+  }
+  .actions a:hover, .actions button:hover { color: var(--text); border-color: #3d4657; }
+  .actions button[data-on="1"] { color: #fbbf24; border-color: #6b5a1f; }
+  .empty { padding: 40px 22px; color: var(--muted); }
+  mark { background: #3b4a63; color: #fff; border-radius: 3px; padding: 0 2px; }
+  #toast {
+    position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%) translateY(24px);
+    background: #222834; border: 1px solid var(--line); color: var(--text);
+    padding: 9px 16px; border-radius: 10px; opacity: 0; transition: .2s; pointer-events: none;
+  }
+  #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>社媒工具清单 · 工具箱</h1>
+  <div class="meta" id="meta"></div>
+</header>
+
+<div class="toolbar">
+  <input id="q" type="search" placeholder="搜索名称 / 描述 / 平台 / 域名　（按 / 聚焦，Esc 清空）">
+  <select id="platform"><option value="">全部平台</option></select>
+  <select id="category"><option value="">全部类别</option></select>
+  <select id="target"><option value="">全部目标环境</option></select>
+  <select id="sort">
+    <option value="source">排序：清单原序</option>
+    <option value="name">排序：名称 A→Z</option>
+    <option value="platform">排序：平台</option>
+  </select>
+  <label class="chk"><input type="checkbox" id="oss"> 只看开源</label>
+  <label class="chk"><input type="checkbox" id="fav"> 只看收藏 <span id="favN"></span></label>
+  <button id="copyMd">复制当前结果为 Markdown</button>
+  <button id="reset">重置</button>
+</div>
+
+<div id="count"></div>
+<main id="list"></main>
+<div id="toast"></div>
+
+<script id="smhl-data" type="application/json">__SMHL_DATA__</script>
+<script>
+(function () {
+  'use strict';
+
+  var payload = JSON.parse(document.getElementById('smhl-data').textContent);
+  var meta = payload.meta || {};
+  var entries = payload.entries || [];
+  var FAV_KEY = 'smhl:favorites';
+  var favorites = new Set();
+  try { favorites = new Set(JSON.parse(localStorage.getItem(FAV_KEY) || '[]')); } catch (e) { favorites = new Set(); }
+
+  var el = function (id) { return document.getElementById(id); };
+  var listEl = el('list'), countEl = el('count'), toastEl = el('toast');
+
+  /* ---------- 元信息 ---------- */
+  var metaBits = [];
+  metaBits.push('共 <b>' + entries.length + '</b> 条');
+  if (meta.generatedAt) metaBits.push('数据生成于 ' + new Date(meta.generatedAt).toLocaleString());
+  if (meta.upstream) metaBits.push('<a href="' + meta.upstream + '" target="_blank" rel="noopener">上游仓库</a>');
+  el('meta').innerHTML = metaBits.join('　·　');
+
+  /* ---------- 下拉选项 ---------- */
+  var catLabels = {};
+  entries.forEach(function (e) { catLabels[e.category] = e.categoryZh || e.category; });
+  var catCount = {};
+  entries.forEach(function (e) { catCount[e.category] = (catCount[e.category] || 0) + 1; });
+  Object.keys(catCount).sort(function (a, b) { return catCount[b] - catCount[a]; })
+    .forEach(function (c) {
+      var o = document.createElement('option');
+      o.value = c; o.textContent = (catLabels[c] || c) + ' (' + catCount[c] + ')';
+      el('category').appendChild(o);
+    });
+
+  var platCount = {};
+  entries.forEach(function (e) { platCount[e.section] = (platCount[e.section] || 0) + 1; });
+  Object.keys(platCount).sort(function (a, b) { return platCount[b] - platCount[a]; })
+    .forEach(function (p) {
+      var o = document.createElement('option');
+      o.value = p; o.textContent = p + ' (' + platCount[p] + ')';
+      el('platform').appendChild(o);
+    });
+
+  var targetCount = {};
+  entries.forEach(function (e) {
+    (e.platformNames || []).forEach(function (t) { targetCount[t] = (targetCount[t] || 0) + 1; });
+  });
+  Object.keys(targetCount).sort(function (a, b) { return targetCount[b] - targetCount[a]; }).slice(0, 40)
+    .forEach(function (t) {
+      var o = document.createElement('option');
+      o.value = t; o.textContent = t + ' (' + targetCount[t] + ')';
+      el('target').appendChild(o);
+    });
+
+  /* ---------- 过滤器状态（与 URL hash 同步） ---------- */
+  function readState() {
+    var p = new URLSearchParams(location.hash.replace(/^#/, ''));
+    return {
+      q: p.get('q') || '',
+      platform: p.get('platform') || '',
+      category: p.get('category') || '',
+      target: p.get('target') || '',
+      sort: p.get('sort') || 'source',
+      oss: p.get('oss') === '1',
+      fav: p.get('fav') === '1'
+    };
+  }
+  function writeState(s) {
+    var p = new URLSearchParams();
+    if (s.q) p.set('q', s.q);
+    if (s.platform) p.set('platform', s.platform);
+    if (s.category) p.set('category', s.category);
+    if (s.target) p.set('target', s.target);
+    if (s.sort !== 'source') p.set('sort', s.sort);
+    if (s.oss) p.set('oss', '1');
+    if (s.fav) p.set('fav', '1');
+    var h = p.toString();
+    history.replaceState(null, '', h ? '#' + h : location.pathname);
+  }
+
+  function currentState() {
+    return {
+      q: el('q').value.trim(),
+      platform: el('platform').value,
+      category: el('category').value,
+      target: el('target').value,
+      sort: el('sort').value,
+      oss: el('oss').checked,
+      fav: el('fav').checked
+    };
+  }
+
+  function applyState(s) {
+    el('q').value = s.q;
+    el('platform').value = s.platform;
+    el('category').value = s.category;
+    el('target').value = s.target;
+    el('sort').value = s.sort;
+    el('oss').checked = s.oss;
+    el('fav').checked = s.fav;
+  }
+
+  /* ---------- 过滤 ---------- */
+  function haystack(e) {
+    return [e.name, e.description || '', e.section, e.categoryZh || '', e.category,
+      (e.platformNames || []).join(' '), e.url || '', e.sourceUrl || ''].join(' ').toLowerCase();
+  }
+  function domainOf(u) { try { return new URL(u).host.replace(/^www\./, ''); } catch (x) { return ''; } }
+
+  function filtered(state) {
+    var terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+    return entries.filter(function (e) {
+      if (state.platform && e.section !== state.platform) return false;
+      if (state.category && e.category !== state.category) return false;
+      if (state.target && (e.platformNames || []).indexOf(state.target) === -1) return false;
+      if (state.oss && !e.openSource) return false;
+      if (state.fav && !favorites.has(e.id)) return false;
+      if (terms.length) {
+        var hay = e.__hay || (e.__hay = haystack(e));
+        for (var i = 0; i < terms.length; i++) if (hay.indexOf(terms[i]) === -1) return false;
+      }
+      return true;
+    });
+  }
+
+  function sorted(rows, mode) {
+    var out = rows.slice();
+    if (mode === 'name') out.sort(function (a, b) { return a.name.localeCompare(b.name); });
+    else if (mode === 'platform') out.sort(function (a, b) {
+      return a.section.localeCompare(b.section) || (a.index - b.index);
+    });
+    return out;
+  }
+
+  /* ---------- 渲染 ---------- */
+  function highlight(text, terms) {
+    var frag = document.createDocumentFragment();
+    if (!terms.length || !text) { frag.appendChild(document.createTextNode(text || '')); return frag; }
+    var lower = text.toLowerCase(), cuts = [], i = 0;
+    while (i < text.length) {
+      var best = -1, bestLen = 0;
+      for (var t = 0; t < terms.length; t++) {
+        var at = lower.indexOf(terms[t], i);
+        if (at !== -1 && (best === -1 || at < best || (at === best && terms[t].length > bestLen))) {
+          best = at; bestLen = terms[t].length;
+        }
+      }
+      if (best === -1) break;
+      if (best > i) cuts.push([i, best, false]);
+      cuts.push([best, best + bestLen, true]);
+      i = best + bestLen;
+    }
+    if (i < text.length) cuts.push([i, text.length, false]);
+    if (!cuts.length) { frag.appendChild(document.createTextNode(text)); return frag; }
+    cuts.forEach(function (c) {
+      var chunk = text.slice(c[0], c[1]);
+      if (c[2]) { var m = document.createElement('mark'); m.textContent = chunk; frag.appendChild(m); }
+      else frag.appendChild(document.createTextNode(chunk));
+    });
+    return frag;
+  }
+
+  function linkButton(href, label) {
+    var a = document.createElement('a');
+    a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = label;
+    return a;
+  }
+
+  function card(e, terms) {
+    var art = document.createElement('article');
+    art.className = 'card';
+    art.dataset.id = e.id;
+
+    var title = document.createElement('div');
+    if (e.url) {
+      var a = linkButton(e.url, '');
+      a.className = 'name';
+      a.appendChild(highlight(e.name, terms));
+      title.appendChild(a);
+    } else {
+      var span = document.createElement('span');
+      span.className = 'name';
+      span.appendChild(highlight(e.name, terms));
+      title.appendChild(span);
+    }
+    art.appendChild(title);
+
+    var badges = document.createElement('div');
+    badges.className = 'badges';
+    var cat = document.createElement('span');
+    cat.className = 'badge cat';
+    cat.dataset.cat = e.category;
+    cat.textContent = e.categoryZh || e.category;
+    badges.appendChild(cat);
+    var plat = document.createElement('span');
+    plat.className = 'badge';
+    plat.textContent = e.section;
+    badges.appendChild(plat);
+    if (e.openSource) {
+      var oss = document.createElement('span');
+      oss.className = 'badge oss';
+      oss.textContent = '开源';
+      badges.appendChild(oss);
+    }
+    art.appendChild(badges);
+
+    if (e.description) {
+      var p = document.createElement('p');
+      p.className = 'desc';
+      p.appendChild(highlight(e.description, terms));
+      art.appendChild(p);
+    }
+
+    if ((e.platformNames || []).length) {
+      var t = document.createElement('div');
+      t.className = 'targets';
+      t.textContent = '运行于：' + e.platformNames.join(' · ');
+      art.appendChild(t);
+    }
+    if (e.url) {
+      var d = document.createElement('div');
+      d.className = 'targets';
+      d.textContent = '域名：' + domainOf(e.url);
+      art.appendChild(d);
+    }
+
+    var actions = document.createElement('div');
+    actions.className = 'actions';
+
+    var fav = document.createElement('button');
+    fav.dataset.act = 'fav';
+    fav.dataset.on = favorites.has(e.id) ? '1' : '0';
+    fav.textContent = (favorites.has(e.id) ? '★ ' : '☆ ') + '收藏';
+    actions.appendChild(fav);
+
+    var cp = document.createElement('button');
+    cp.dataset.act = 'copy';
+    cp.textContent = '复制链接';
+    actions.appendChild(cp);
+
+    if (e.url) actions.appendChild(linkButton(e.url, '打开'));
+    if (e.sourceUrl && e.sourceUrl !== e.url) actions.appendChild(linkButton(e.sourceUrl, '源码'));
+    art.appendChild(actions);
+
+    return art;
+  }
+
+  function render() {
+    var state = currentState();
+    writeState(state);
+    var terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+    var rows = sorted(filtered(state), state.sort);
+
+    listEl.textContent = '';
+    if (!rows.length) {
+      var empty = document.createElement('div');
+      empty.className = 'empty';
+      empty.textContent = '没有匹配的条目。试试放宽筛选条件，或点“重置”。';
+      listEl.appendChild(empty);
+    } else {
+      var frag = document.createDocumentFragment();
+      rows.forEach(function (e) { frag.appendChild(card(e, terms)); });
+      listEl.appendChild(frag);
+    }
+
+    var favTotal = entries.filter(function (e) { return favorites.has(e.id); }).length;
+    countEl.innerHTML = '显示 <b>' + rows.length + '</b> / ' + entries.length + ' 条'
+      + (favTotal ? '　·　已收藏 <b>' + favTotal + '</b> 条' : '')
+      + (state.fav ? '　·　（仅显示收藏）' : '');
+    el('favN').textContent = favTotal ? '(' + favTotal + ')' : '';
+  }
+
+  /* ---------- 交互 ---------- */
+  ['q', 'platform', 'category', 'target', 'sort', 'oss', 'fav'].forEach(function (id) {
+    el(id).addEventListener('input', render);
+    el(id).addEventListener('change', render);
+  });
+
+  listEl.addEventListener('click', function (ev) {
+    var btn = ev.target.closest('button[data-act]');
+    if (!btn) return;
+    var id = btn.closest('.card').dataset.id;
+    var entry = entries.find(function (e) { return e.id === id; });
+    if (!entry) return;
+
+    if (btn.dataset.act === 'fav') {
+      if (favorites.has(id)) favorites.delete(id); else favorites.add(id);
+      try { localStorage.setItem(FAV_KEY, JSON.stringify([].concat(Array.from(favorites)))); } catch (e) {}
+      render();
+    } else if (btn.dataset.act === 'copy') {
+      copyText(entry.url || entry.sourceUrl || entry.name, '已复制：' + entry.name);
+    }
+  });
+
+  el('copyMd').addEventListener('click', function () {
+    var state = currentState();
+    var rows = sorted(filtered(state), state.sort);
+    if (!rows.length) { toast('当前没有结果可复制'); return; }
+    var lines = rows.map(function (e) {
+      var tags = [e.section, e.categoryZh].concat(e.openSource ? ['开源'] : []).join(' / ');
+      var bits = ['- [' + e.name + '](' + (e.url || e.sourceUrl || '') + ')'];
+      if (e.openSource && e.sourceUrl && e.sourceUrl !== e.url) bits.push('源码 ' + e.sourceUrl);
+      bits.push('`' + tags + '`');
+      if (e.description) bits.push('— ' + e.description);
+      return bits.join(' ');
+    });
+    copyText('### 社媒工具清单筛选结果（' + rows.length + ' 条）\n\n' + lines.join('\n'), '已复制 ' + rows.length + ' 条为 Markdown');
+  });
+
+  el('reset').addEventListener('click', function () {
+    applyState({ q: '', platform: '', category: '', target: '', sort: 'source', oss: false, fav: false });
+    render();
+  });
+
+  document.addEventListener('keydown', function (ev) {
+    if (ev.key === '/' && document.activeElement !== el('q')) { ev.preventDefault(); el('q').focus(); }
+    else if (ev.key === 'Escape') {
+      if (document.activeElement === el('q') && el('q').value) { el('q').value = ''; render(); }
+    }
+  });
+
+  var toastTimer = null;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 1800);
+  }
+
+  function copyText(text, okMsg) {
+    var done = function () { toast(okMsg); };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done, function () { fallback(); });
+    } else { fallback(); }
+    function fallback() {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } catch (e) { toast('复制失败，请手动选择'); }
+      document.body.removeChild(ta);
+    }
+  }
+
+  applyState(readState());
+  render();
+})();
+</script>
+</body>
+</html>

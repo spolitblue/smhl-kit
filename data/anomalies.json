@@ -1,0 +1,12 @@
+{
+  "count": 1,
+  "anomalies": [
+    {
+      "type": "missing-primary-url",
+      "line": 85,
+      "section": "Instagram",
+      "name": "Unfold",
+      "raw": "| 13. | 🟦 | | Unfold | [iOS](https://apps.apple.com/us/app/unfold-create-stories/id1247275033), [Android](https://play.google.com/store/apps/details?id=com.moonlab.unfold) | Create beautiful stories for Instagram |"
+    }
+  ]
+}

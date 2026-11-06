@@ -1,0 +1,116 @@
+{
+  "sourceFile": "C:\\Users\\LZY20\\Desktop\\harness\\social-media-hacker-list\\README.md",
+  "generatedAt": "2026-10-01T13:58:22.586Z",
+  "totalEntries": 174,
+  "sections": [
+    {
+      "section": "Facebook",
+      "count": 8,
+      "openSource": 2
+    },
+    {
+      "section": "Instagram",
+      "count": 14,
+      "openSource": 3
+    },
+    {
+      "section": "LinkedIn",
+      "count": 13,
+      "openSource": 4
+    },
+    {
+      "section": "Mastodon",
+      "count": 10,
+      "openSource": 4
+    },
+    {
+      "section": "Multi-platform",
+      "count": 35,
+      "openSource": 6
+    },
+    {
+      "section": "Reddit",
+      "count": 13,
+      "openSource": 4
+    },
+    {
+      "section": "Snapchat",
+      "count": 2,
+      "openSource": 1
+    },
+    {
+      "section": "Threads",
+      "count": 3,
+      "openSource": 0
+    },
+    {
+      "section": "TikTok",
+      "count": 17,
+      "openSource": 7
+    },
+    {
+      "section": "X",
+      "count": 35,
+      "openSource": 4
+    },
+    {
+      "section": "YouTube",
+      "count": 24,
+      "openSource": 17
+    }
+  ],
+  "categories": [
+    {
+      "category": "productivity-tools",
+      "categoryZh": "效率与工具",
+      "glyph": "🟨",
+      "count": 41
+    },
+    {
+      "category": "for-developers",
+      "categoryZh": "面向开发者",
+      "glyph": "🟫",
+      "count": 35
+    },
+    {
+      "category": "video",
+      "categoryZh": "视频",
+      "glyph": "🟥",
+      "count": 32
+    },
+    {
+      "category": "alternative-client",
+      "categoryZh": "替代客户端",
+      "glyph": "🟪",
+      "count": 19
+    },
+    {
+      "category": "analytics-data",
+      "categoryZh": "分析与数据",
+      "glyph": "🟧",
+      "count": 16
+    },
+    {
+      "category": "image",
+      "categoryZh": "图片",
+      "glyph": "🟩",
+      "count": 14
+    },
+    {
+      "category": "content-creation",
+      "categoryZh": "内容创作",
+      "glyph": "🟦",
+      "count": 12
+    },
+    {
+      "category": "bots",
+      "categoryZh": "机器人",
+      "glyph": "⬛",
+      "count": 5
+    }
+  ],
+  "openSource": 52,
+  "closedSource": 122,
+  "uniqueDomains": 127,
+  "anomalyCount": 1
+}

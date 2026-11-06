@@ -1,0 +1,175 @@
+﻿id,section,index,category,categoryZh,openSource,sourceUrl,name,url,platformNames,description
+facebook-1,Facebook,1,productivity-tools,效率与工具,true,https://github.com/ArnaudLigny/F-Notifier,F-notifier,https://dev.ligny.org/F-Notifier/,Extension,Displays Facebook notifications unread count
+facebook-2,Facebook,2,video,视频,false,,FDOWN.net,https://fdown.net,Web; Chrome,Facebook video downloader
+facebook-3,Facebook,3,video,视频,false,,hhhfac.com,https://hhhfac.com/,Web,"Facebook video, reels and photo downloader in HD MP4"
+facebook-4,Facebook,4,alternative-client,替代客户端,false,,Messenger for Desktop,https://messengerfordesktop.com/,MacOS; Windows,Desktop client for Messenger
+facebook-5,Facebook,5,video,视频,false,,FBTake.com,https://fbtake.com/,Web,Facebook video downloader
+facebook-6,Facebook,6,video,视频,false,,FVDownloader.net,https://fvdownloader.net/,Web,"Facebook Reels, Video, Profile Picture Downloader"
+facebook-7,Facebook,7,for-developers,面向开发者,true,https://github.com/restfb/restfb,RestFB,https://restfb.com/,Java,Open source FB Graph API client
+facebook-8,Facebook,8,video,视频,false,,IoDown,https://iodown.com/facebook-downloader/,Web,Download available public Facebook videos from a link
+instagram-1,Instagram,1,content-creation,内容创作,false,,Caption Writer,https://www.captionwriter.app/,iOS; Android,Write captions with spaces & line breaks
+instagram-2,Instagram,2,image,图片,false,,Heepsy,https://www.heepsy.com/,Web,Uncover ideal influencers effortlessly
+instagram-3,Instagram,3,video,视频,false,,hhhins.com,https://hhhins.com/,Web,Save Instagram videos and reels in original HD quality
+instagram-4,Instagram,4,analytics-data,分析与数据,false,,HypeAuditor,https://hypeauditor.com/,Web,Analyze any Instagram account for fake followers and likes
+instagram-5,Instagram,5,productivity-tools,效率与工具,false,,INDownloader,https://indownloader.app/,Web,Instagram Downloader
+instagram-6,Instagram,6,for-developers,面向开发者,true,https://github.com/adw0rd/instagrapi,instagrapi,https://github.com/adw0rd/instagrapi,Python,Unofficial Instagram private API for Python
+instagram-7,Instagram,7,for-developers,面向开发者,true,https://github.com/instaloader/instaloader,Instaloader,https://instaloader.github.io,Python,"Download pictures, video and metadata from Instagram"
+instagram-8,Instagram,8,bots,机器人,true,https://github.com/ayuuxh2/insta-p8,InstaAuto,https://ayush.myhabits.in,Web,"Self-hosted Instagram DM, comment, story, and AI reply automation"
+instagram-9,Instagram,9,content-creation,内容创作,false,,Kards,https://apps.apple.com/us/app/apple-store/id1448729099,iOS,Instagram stories editor
+instagram-10,Instagram,10,productivity-tools,效率与工具,false,,Later,https://later.com/auto-publish/,Web,Auto Publish for Instagram
+instagram-11,Instagram,11,content-creation,内容创作,false,,Line Break Generator,https://pallyy.com/tools/instagram-line-break,Web,Instagram Line Break Generator
+instagram-12,Instagram,12,video,视频,false,,Turn,https://www.turn.audio/,Web,Turn your audio into videos you can share on Instagram
+instagram-13,Instagram,13,content-creation,内容创作,false,,Unfold,,iOS; Android,Create beautiful stories for Instagram
+instagram-14,Instagram,14,content-creation,内容创作,false,,ViewSocials,https://viewsocials.com/,Web,Profile Viewer and Instagram Downloader
+linkedin-1,LinkedIn,1,content-creation,内容创作,false,,CommenTron,https://chromewebstore.google.com/detail/commentron-%E2%80%94-ai-booster-f/hdappgahcgpifoabanfifjicfllpokgo,Extension,Auto-Comment on LinkedIn Posts
+linkedin-2,LinkedIn,2,for-developers,面向开发者,true,https://github.com/ebx/ebx-linkedin-sdk,ebx-linkedin-sdk,https://github.com/ebx/ebx-linkedin-sdk,Java,A pure Java LinkedIn API client which implements the v2 API
+linkedin-3,LinkedIn,3,content-creation,内容创作,false,,Inksprout,https://inksprout.co/,Extension,Use AI to summarize links
+linkedin-4,LinkedIn,4,productivity-tools,效率与工具,false,,LinkedIn Lead Generator,https://getleadfox.com/,Web,"Auto reply, and find emails and details of people who commented on your post."
+linkedin-5,LinkedIn,5,video,视频,false,,LinkedIn Video Downloader,https://podify.io/linkedin-video-downloader,Web,Download LinkedIn Videos
+linkedin-6,LinkedIn,6,productivity-tools,效率与工具,true,https://github.com/JMPerez/linkedin-to-json-resume,LinkedIn to Json Résumé,https://jmperezperez.com/linkedin-to-json-resume/,Web,An exporter from a LinkedIn profile to JSON Résumé
+linkedin-7,LinkedIn,7,for-developers,面向开发者,true,https://github.com/eracle/linkedin,Linkedin Scraper,https://github.com/eracle/linkedin,Python,Linkedin Scraper using Selenium Web Driver
+linkedin-8,LinkedIn,8,for-developers,面向开发者,true,https://github.com/joeyism/linkedin_scraper,Linkedin Scraper,https://github.com/joeyism/linkedin_scraper,Python,Scrape Linkedin for user data
+linkedin-9,LinkedIn,9,productivity-tools,效率与工具,false,,Minimal LinkedIn,https://minimallinkedin.com/,Chrome; Firefox,"Remove LinkedIn clutter in one-click. Hide ads, remove distractions, and customize as you like."
+linkedin-10,LinkedIn,10,productivity-tools,效率与工具,false,,Reply Email Finder,https://chromewebstore.google.com/detail/reply-linkedin-email-find/amcdijdgmckgkkahhcobikllddfbfidi,Extension,Automated email search on LinkedIn
+linkedin-11,LinkedIn,11,analytics-data,分析与数据,false,,Resume Worded,https://resumeworded.com/linkedin-review/,Web,AI powered resume analysis
+linkedin-12,LinkedIn,12,productivity-tools,效率与工具,false,,ResumeAI Headline Generator,https://withresumeai.com/free-tools/linkedin-headline-generator,Web,"Generate a LinkedIn profile headline from your role, industry and key skill"
+linkedin-13,LinkedIn,13,analytics-data,分析与数据,false,,Taplio,https://taplio.com/,Web,Content scheduling and analytics service
+mastodon-1,Mastodon,1,alternative-client,替代客户端,false,,iMast,https://apps.apple.com/us/app/imast/id1229461703,iOS; iPad,Mastodon client for iPhones and iPads
+mastodon-2,Mastodon,2,for-developers,面向开发者,true,https://github.com/halcy/Mastodon.py,Mastodon.py,https://github.com/halcy/Mastodon.py,Python,Python wrapper for the Mastodon API
+mastodon-3,Mastodon,3,for-developers,面向开发者,true,https://github.com/neet/masto.js,Masto.js,https://neet.github.io/masto.js/,JavaScript,"Mastodon API client for JavaScript, TypeScript, Node.js, browsers"
+mastodon-4,Mastodon,4,alternative-client,替代客户端,false,,Mastonaut,https://apps.apple.com/us/app/mastonaut/id1450757574,Mac,A delightful Mastodon client
+mastodon-5,Mastodon,5,alternative-client,替代客户端,false,,Mastoot,https://apps.apple.com/us/app/mastoot/id1501485410,iOS,"Beautiful, elegant, and performant Mastodon client app"
+mastodon-6,Mastodon,6,alternative-client,替代客户端,false,,Pinafore,https://pinafore.social,Web,"Web client for Mastodon, designed for speed and simplicity"
+mastodon-7,Mastodon,7,productivity-tools,效率与工具,true,https://github.com/kha7iq/pingme,PingMe,https://pingme.lmno.pk/,MacOS; GH Action,CLI to send messages to various messaging platforms incl. Mastodon
+mastodon-8,Mastodon,8,alternative-client,替代客户端,false,,Subway Tooter,https://play.google.com/store/apps/details?id=jp.juggler.subwaytooter,Android,Mastodon client for Android 5.0 or later
+mastodon-9,Mastodon,9,alternative-client,替代客户端,false,,Toot,https://apps.apple.com/app/toot/id1229021451,iOS; iPad,Social networking that is nice
+mastodon-10,Mastodon,10,for-developers,面向开发者,true,https://github.com/joschi/toot-together,Toot Together,https://github.com/joschi/toot-together,GH Action,Publish toots from a GitHub repository
+multi-platform-1,Multi-platform,1,image,图片,false,,AI Anonymizer,https://generated.photos/anonymizer,Web,Generate a synthetic profile picture
+multi-platform-2,Multi-platform,2,analytics-data,分析与数据,false,,Buffer,https://buffer.com/,Web,"Automation, scheduling, and analytics"
+multi-platform-3,Multi-platform,3,image,图片,false,,Canva,https://www.canva.com/,Web,Design social media graphics
+multi-platform-4,Multi-platform,4,image,图片,false,,Carbon,https://carbon.now.sh/,Web,Create images of code for sharing
+multi-platform-5,Multi-platform,5,productivity-tools,效率与工具,false,,dlvr.it,https://dlvrit.com,Web,social media automation
+multi-platform-6,Multi-platform,6,image,图片,false,,DynaPictures,https://dynapictures.com/,Web,Auto-generate banners for social media
+multi-platform-7,Multi-platform,7,productivity-tools,效率与工具,false,,Encer,https://encer.me/en,Web,"Interactive link-in-bio pages with polls, messages, giveaways, live updates, and privacy-aware analytics"
+multi-platform-8,Multi-platform,8,content-creation,内容创作,false,,Fastory,https://www.fastory.io/,Web,"Stories editor for Snapchat, Facebook, Instagram"
+multi-platform-9,Multi-platform,9,bots,机器人,true,https://github.com/Ananto30/hadith-every-hour,Hadith Every Hour,https://github.com/Ananto30/hadith-every-hour,Python,Bot posting to Twitter and Facebook using Github actions
+multi-platform-10,Multi-platform,10,video,视频,false,,hhhdownload.com,https://hhhdownload.com/,Web,"Download video, image and audio from Pinterest, Reddit, SoundCloud, Snapchat, Tumblr, Bandcamp, iFunny, Rumble, Streamable, Newgrounds and Suno"
+multi-platform-11,Multi-platform,11,productivity-tools,效率与工具,false,,Hootsuite,https://www.hootsuite.com/,iOS; Android; Web,Manage all your social media
+multi-platform-12,Multi-platform,12,productivity-tools,效率与工具,false,,HypeFury,https://hypefury.com/,Web,Grow & monetize your social media
+multi-platform-13,Multi-platform,13,analytics-data,分析与数据,true,https://github.com/socai-io/jev-social,Jev Social,https://socai-io.github.io/jev-social/,Web; CLI,"Research Instagram, TikTok, and LinkedIn with real-browser evidence and cited reports"
+multi-platform-14,Multi-platform,14,for-developers,面向开发者,false,,Juicer,https://www.juicer.io/,Web,Aggregated social media feed for website
+multi-platform-15,Multi-platform,15,content-creation,内容创作,false,,Kapwing,https://www.kapwing.com/,Web,"Create images, videos, and GIFs."
+multi-platform-16,Multi-platform,16,bots,机器人,false,,ManyChat,https://manychat.com/,Bot,Automate conversations in Facebook Messenger and Instagram
+multi-platform-17,Multi-platform,17,productivity-tools,效率与工具,false,,MeetEdgar,https://meetedgar.com/,Web,Automation and scheduling
+multi-platform-18,Multi-platform,18,analytics-data,分析与数据,false,,metricool,https://metricool.com/,Web,Sheduling and analytics for multiple social media platforms
+multi-platform-19,Multi-platform,19,image,图片,true,https://github.com/non-npc/No-WEBP,No-WEBP,https://github.com/non-npc/No-WEBP,Javascript,"Chrome plugin to force original image formats (GIF, PNG, JPG) instead of WebP/AVIF"
+multi-platform-20,Multi-platform,20,productivity-tools,效率与工具,true,https://github.com/getopenpost/openpost,OpenPost,https://openpo.st/,Web,Self-hosted scheduling and publishing across multiple social networks
+multi-platform-21,Multi-platform,21,image,图片,false,,Profile Pic Maker,https://pfpmaker.com/,Web,Make an awesome profile picture
+multi-platform-22,Multi-platform,22,video,视频,false,,Recast Studio,https://recast.studio/,Web,Turn long-form video & audio content into engaging social media videos
+multi-platform-23,Multi-platform,23,video,视频,false,,ReelWorkshop,https://reelworkshop.com,Web,"Browser compilation maker for vertical 9:16 TikTok, Reels, and Shorts. Edit and preview free; export on Starter."
+multi-platform-24,Multi-platform,24,video,视频,false,,Remove Audio Video Compressor,https://remove-audio.com/tools/compress-video,Web,"Compress a video in the browser to fit Discord, WhatsApp, email or social media size limits, without uploading it"
+multi-platform-25,Multi-platform,25,video,视频,false,,shortshort,https://www.shortshort.io/,Web,"Turn one long video (talk, podcast, course) into vertical 9:16 shorts with word-by-word captions"
+multi-platform-26,Multi-platform,26,for-developers,面向开发者,true,https://github.com/sokomishalov/skraper,skraper,https://github.com/sokomishalov/skraper,Kotlin,"Library & CLI for scraping posts and media w/o authorization and page rendering: FB, IG, Twitter, YT, Reddit, etc."
+multi-platform-27,Multi-platform,27,productivity-tools,效率与工具,false,,SocialEcho,https://www.socialecho.net/,Web,"Cross-network publishing, inbox, listening, and analytics workspace"
+multi-platform-28,Multi-platform,28,video,视频,false,,SoundMadeSeen,https://soundmadeseen.com/,Web,"Create animated videos for sharing, add captions and create text content"
+multi-platform-29,Multi-platform,29,content-creation,内容创作,false,,Storybeat,https://www.storybeat.com/,iOS; Android,Add music to your stories
+multi-platform-30,Multi-platform,30,analytics-data,分析与数据,false,,Storyheap,https://storyheap.com/,Web,Analytics for Snapchat & Instagram Stories
+multi-platform-31,Multi-platform,31,content-creation,内容创作,true,https://github.com/trypostit/trypost,TryPost,https://github.com/trypostit/trypost,Web,Open-source Social Media Scheduling
+multi-platform-32,Multi-platform,32,video,视频,false,,Video Size Reducer,https://videosizereducer.org/,Web,Compress video to a target file size to fit platform upload limits
+multi-platform-33,Multi-platform,33,content-creation,内容创作,false,,WAVconverter,https://www.wavconverter.com/,Web,"Fast, free, secure audio file conversion for musicians and creators."
+multi-platform-34,Multi-platform,34,video,视频,false,,Wavve,https://wavve.co/,Web,Turn audio into animated videos for sharing
+multi-platform-35,Multi-platform,35,video,视频,false,,Zubtitle,https://zubtitle.com/,Web,Automatically add captions to any video
+reddit-1,Reddit,1,alternative-client,替代客户端,false,,Apollo,https://apolloapp.io/,iOS,Reddit client
+reddit-2,Reddit,2,analytics-data,分析与数据,true,https://github.com/ArthurHeitmann/arctic_shift,Arctic Shift,https://arctic-shift.photon-reddit.com,Web; API,A project to preserve Reddit comments
+reddit-3,Reddit,3,bots,机器人,false,,F5Bot,https://f5bot.com/,Bot,Get an email when selected keywords are mentioned on Reddit
+reddit-4,Reddit,4,analytics-data,分析与数据,false,,Front Page Stats,https://frontpagestats.com/,Web,Reddit front page analytics
+reddit-5,Reddit,5,alternative-client,替代客户端,false,,HopWatch for Reddit,https://play.google.com/store/apps/details?id=com.ugglynoodle.hopwatch,Android TV,Reddit client for TVs
+reddit-6,Reddit,6,alternative-client,替代客户端,false,,Now for Reddit,https://play.google.com/store/apps/details?id=com.phyora.apps.reddit_now,Android,"Beautiful, easy-to-use app for browsing Reddit"
+reddit-7,Reddit,7,for-developers,面向开发者,true,https://github.com/praw-dev/praw,PRAW,https://praw.readthedocs.io/en/latest/,Python,Python Reddit API Wrapper; for building bots
+reddit-8,Reddit,8,analytics-data,分析与数据,false,,Reddit Enhancement Suite,https://redditenhancementsuite.com/,Extension,suite of mods to enhance your reddit browsing experience
+reddit-9,Reddit,9,video,视频,false,,RedditSave,https://redditsave.com/,Web; Extension; Bot,Reddit Video Downloader
+reddit-10,Reddit,10,alternative-client,替代客户端,true,https://github.com/QuantumBadger/RedReader,RedReader,https://play.google.com/store/apps/details?id=org.quantumbadger.redreader,Android,"An unofficial, open source client for reddit"
+reddit-11,Reddit,11,video,视频,false,,SaveVideo.red,https://savevideo.red/,Web,Reddit Video Downloader
+reddit-12,Reddit,12,for-developers,面向开发者,true,https://github.com/andrewbanchich/shreddit,Shreddit,https://github.com/andrewbanchich/shreddit,Rust,Reddit post/comment mass deletion.
+reddit-13,Reddit,13,analytics-data,分析与数据,false,,Subreddit Stats,https://subredditstats.com/,Web,Statistics for every subreddit
+snapchat-1,Snapchat,1,for-developers,面向开发者,true,https://github.com/ToTheMax/Snapchat-All-Memories-Downloader,Snapchat All Memories Downloader,https://github.com/ToTheMax/Snapchat-All-Memories-Downloader,Docker,Script to download snapchat memories in bulk
+snapchat-2,Snapchat,2,image,图片,false,,ViewSnapStories,https://viewsnapstories.com,Web,View and Download Snapchat Stories and Spotlights Anonymously
+threads-1,Threads,1,video,视频,false,,Threads Downloader,https://threadsdownloader.com,Web,Threads Video Downloader
+threads-2,Threads,2,image,图片,false,,ThreadFaker,https://threadfaker.com,Web,Fake Threads Post Generator
+threads-3,Threads,3,image,图片,false,,Threads Circles,https://threadscircles.com,Web,Create your own Threads interaction circle
+tiktok-1,TikTok,1,video,视频,false,,hhhtik.com,https://hhhtik.com/,Web,Download TikTok videos without watermark in HD MP4 or convert to MP3
+tiktok-2,TikTok,2,video,视频,false,,PeekTok,https://peektok.net/,Web,"View public profile, watch videos, and download — no TikTok account needed."
+tiktok-3,TikTok,3,video,视频,false,,SSSTikTok,https://ssstik.link/,Web,No-Watermark TikTok Video Downloader
+tiktok-4,TikTok,4,video,视频,false,,SnapTik Downloader,https://snaptik.pro/,Web,TikTok Video Downloader Without Watermark
+tiktok-5,TikTok,5,video,视频,false,,Tik.ninja,https://tik.ninja/,Web,Fast and free TikTok viewer and downloader
+tiktok-6,TikTok,6,video,视频,false,,TikFace,https://tikface.com/,Web,TikTok Web Profile Viewer
+tiktok-7,TikTok,7,video,视频,false,,TikTok Downloader,https://tiktokdownloader.com,Web,TikTok Video Downloader
+tiktok-8,TikTok,8,analytics-data,分析与数据,true,https://github.com/conoro/tiktok-rss-flat,TikTok RSS,https://github.com/conoro/tiktok-rss-flat,GH Actions,Generate RSS feeds for TikTok accounts
+tiktok-9,TikTok,9,video,视频,false,,TikTok Viewer,https://ttonlineviewer.com/,Web,Anonymous TikTok viewer for public profiles and stories
+tiktok-10,TikTok,10,for-developers,面向开发者,true,https://github.com/davidteather/TikTok-Api,TikTok-Api,https://github.com/davidteather/TikTok-Api,Python,The Unofficial TikTok API Wrapper In Python
+tiktok-11,TikTok,11,for-developers,面向开发者,true,https://github.com/zerodytrash/TikTok-Live-Connector,TikTok-Live-Connector,https://github.com/zerodytrash/TikTok-Live-Connector,Node.js,Node.js library to receive live stream events
+tiktok-12,TikTok,12,for-developers,面向开发者,true,https://github.com/carcabot/tiktok-signature,tiktok-signature,https://github.com/carcabot/tiktok-signature,Node.js,Generate tiktok signature tokens
+tiktok-13,TikTok,13,video,视频,false,,TikTokio,https://tiktokio.com/,Web,Fast and Free TikTok Video Downloader
+tiktok-14,TikTok,14,for-developers,面向开发者,true,https://github.com/makiisthenes/TiktokAutoUploader,TiktokAutoUploader,https://github.com/makiisthenes/TiktokAutoUploader,Python,CLI to handle TikTok video uploads and edits
+tiktok-15,TikTok,15,for-developers,面向开发者,true,https://github.com/isaackogan/TikTokLive,TikTokLive,https://github.com/isaackogan/TikTokLive,Python,Receive livestream events in realtime from TikTok LIVE
+tiktok-16,TikTok,16,for-developers,面向开发者,true,https://github.com/jwdeveloper/TikTokLiveJava,TikTokLiveJava,https://github.com/jwdeveloper/TikTokLiveJava,Java,Implementation of TikTok Live-Connector library to track live stream events
+tiktok-17,TikTok,17,video,视频,false,,ViewTikStories,https://viewtikstories.com/,Web,View and download public TikTok Stories and videos anonymously
+x-1,X,1,alternative-client,替代客户端,false,,Albatross for Twitter,https://play.google.com/store/apps/details?id=com.nick.mowen.albatross,Android,"Albatross for Twitter is an ad-free, effortless Twitter client"
+x-2,X,2,bots,机器人,false,,AwardThisTweet,https://twitter.com/AwardThisTweet,Bot,Award your favorite tweets with this bot
+x-3,X,3,productivity-tools,效率与工具,false,,Block Party,https://www.blockpartyapp.com/,App,filter out unwanted Twitter @mentions
+x-4,X,4,productivity-tools,效率与工具,false,,Bkmark,https://bkmark.io,Extension; bot,Bookmark your favorite tweets
+x-5,X,5,image,图片,false,,Chirpty,https://chirpty.com/,Web,Create your own Twitter interaction circle
+x-6,X,6,productivity-tools,效率与工具,false,,Dewey,https://getdewey.co/,Web,"Search, organize, and share all your Twitter bookmarks"
+x-7,X,7,video,视频,false,,Download Twitter Videos,https://play.google.com/store/apps/details?id=tweeter.gif.twittervideodownloader,Android,Download videos
+x-8,X,8,analytics-data,分析与数据,false,,ExportData,https://www.exportdata.io/,Web,Export Twitter Historical Data
+x-9,X,9,analytics-data,分析与数据,false,,Ilo,https://ilo.so/,Web,Twitter analytics
+x-10,X,10,alternative-client,替代客户端,false,,Kizie,https://kizie.co,Web,"Cleaner, better way to browse Twitter"
+x-11,X,11,productivity-tools,效率与工具,false,,Megablock,https://megablock.xyz/,Web,"Block the tweet, its author, and every single person who liked it."
+x-12,X,12,image,图片,false,,Mugshot Bot,https://mugshotbot.com/,Web,Automated link previews
+x-13,X,13,analytics-data,分析与数据,false,,Politwoops,https://projects.propublica.org/politwoops/,Web,Archive of deleted political tweets
+x-14,X,14,image,图片,false,,poet.so,https://poet.so/,Web,Capture and share tweets as images
+x-15,X,15,productivity-tools,效率与工具,false,,Readwise,https://readwise.io,iOS; Android,Save and revisit your best twitter highlights
+x-16,X,16,for-developers,面向开发者,true,https://github.com/Altimis/Scweet,Scweet,https://github.com/Altimis/Scweet,Python,Twitter scraper using Selenium
+x-17,X,17,analytics-data,分析与数据,false,,StockTwits,https://stocktwits.com/,Web; iOS; Android,"Realtime tweets about stocks, crypto, futures, and forex"
+x-18,X,18,productivity-tools,效率与工具,false,,Thread Reader,https://threadreaderapp.com/,Web/Bot,Read and share Twitter threads easily
+x-19,X,19,for-developers,面向开发者,true,https://github.com/Xquik-dev/tweetclaw,TweetClaw,https://github.com/Xquik-dev/tweetclaw,OpenClaw; npm,"Automation plugin: search tweets, post tweets and replies, export followers, run monitors and webhooks, send DMs, and run giveaway draws."
+x-20,X,20,alternative-client,替代客户端,false,,Tweetbot,https://tapbots.com/tweetbot/,MacOS; iOS,alternative client
+x-21,X,21,productivity-tools,效率与工具,false,,Tweetfull,https://tweetfull.com/,Web,Growth-hacking and automation tool
+x-22,X,22,for-developers,面向开发者,true,https://github.com/tweepy/tweepy,Tweepy,https://www.tweepy.org/,Python,Twitter API client
+x-23,X,23,for-developers,面向开发者,false,,TwexAPI,https://twexapi.io,Web; API; MCP; Agent; AI,Affordable X/Twitter API replacement for developers
+x-24,X,24,productivity-tools,效率与工具,false,,Twiks,https://chromewebstore.google.com/detail/twiks/pkmjihonggeefhkldlbdnpnhecgfgojc,Extension,Adds special features like undo button
+x-25,X,25,image,图片,false,,Twitter Circle,https://twittercircle.com/,Web,Create your own Twitter interaction circle (with no rate limits)
+x-26,X,26,productivity-tools,效率与工具,false,,Twitter Picker,https://twitterpicker.com/,Web,Random Twitter retweet picker for giveaways/raffles
+x-27,X,27,productivity-tools,效率与工具,false,,Typefully,https://typefully.app/,Web,Distraction-free editor to write & publish tweets and threads
+x-28,X,28,productivity-tools,效率与工具,false,,TWMate,https://twmate.com/,Web,Twitter Video & GIF downloader
+x-29,X,29,productivity-tools,效率与工具,false,,TwitterSparkle,https://twittersparkle.com/,Web,Download Twitter Videos & GIFs
+x-30,X,30,productivity-tools,效率与工具,false,,Twitee Twitter Video Downloader,https://twitee.co/twitter-video-downloader,Web,Download Twitter video for public X/Twitter viewer without account
+x-31,X,31,productivity-tools,效率与工具,false,,Xbase,https://xbase.so,Web,Get more knowldge from X bookmarks
+x-32,X,32,productivity-tools,效率与工具,false,,Xbase Extension,https://chrome.google.com/webstore/detail/ipldmffgjegnflofelcomladejjllfli,Extension,Export your X Bookmarks for free
+x-33,X,33,for-developers,面向开发者,true,https://github.com/Xquik-dev/x-twitter-scraper,Xquik,https://xquik.com,Web; API; MCP,"X automation platform with REST API, webhooks, SDKs, and MCP access"
+x-34,X,34,for-developers,面向开发者,false,,tweet.md,https://tweet.md/,Web; API,"Convert X posts, threads, Articles, and profiles to clean Markdown for AI, research, and archives"
+x-35,X,35,video,视频,false,,hhhtwi.com,https://hhhtwi.com/,Web,"Download video, GIFs and photos from twitter.com, x.com or t.co links in original quality"
+youtube-1,YouTube,1,for-developers,面向开发者,true,https://github.com/PierfrancescoSoffritti/android-youtube-player,Android Youtube Player,https://github.com/PierfrancescoSoffritti/android-youtube-player,Kotlin,YouTube Player library for Android and Chromecast
+youtube-2,YouTube,2,for-developers,面向开发者,true,https://github.com/iawia002/annie,Annie,https://github.com/iawia002/annie,Go,Video downloader
+youtube-3,YouTube,3,alternative-client,替代客户端,true,https://github.com/FreeTubeApp/FreeTube,FreeTube,https://github.com/FreeTubeApp/FreeTube,Desktop,The Private YouTube Client
+youtube-4,YouTube,4,productivity-tools,效率与工具,true,https://github.com/code4charity/YouTube-Extension,ImprovedTube,https://github.com/code4charity/YouTube-Extension,Extension,Improved youtube experience
+youtube-5,YouTube,5,productivity-tools,效率与工具,false,,Lyrics Here,https://robwu.nl/lyricshere/,Extension,Instant lyrics on YouTube
+youtube-6,YouTube,6,for-developers,面向开发者,true,https://github.com/mps-youtube/mps-youtube,mps-youtube,https://github.com/mps-youtube/mps-youtube,Python,Terminal based YouTube player and downloader
+youtube-7,YouTube,7,alternative-client,替代客户端,true,https://github.com/TeamNewPipe/NewPipe/,NewPipe,https://github.com/TeamNewPipe/NewPipe,Android,The lightweight YouTube experience for Android
+youtube-8,YouTube,8,for-developers,面向开发者,true,https://github.com/fent/node-ytdl,node-ytdl,https://github.com/fent/node-ytdl,Node.js,YouTube video downloader
+youtube-9,YouTube,9,productivity-tools,效率与工具,false,,Picture in Picture - PiP View,https://chromewebstore.google.com/detail/picture-in-picture-pip-vi/eaeedemddlledlghhjebjgdmhjekgegd,Extension,Watch videos in a floating PiP window (always on top of other windows)
+youtube-10,YouTube,10,alternative-client,替代客户端,true,https://github.com/TeamPiped/Piped,Piped,https://piped.kavin.rocks,Web,Privacy-friendly YouTube frontend which is efficient by design
+youtube-11,YouTube,11,productivity-tools,效率与工具,false,,PocketTube,https://yousub.info/,Extension; iOS; Android,Organize subscriptions
+youtube-12,YouTube,12,alternative-client,替代客户端,true,https://github.com/SkyTubeTeam/SkyTube,SkyTube,https://f-droid.org/packages/free.rm.skytube.oss/,Android,Open-source Youtube client
+youtube-13,YouTube,13,productivity-tools,效率与工具,true,https://github.com/ajayyy/SponsorBlock,SponsorBlock,https://sponsor.ajay.app,Extension; Android,Skip sponsor segments in YouTube videos
+youtube-14,YouTube,14,for-developers,面向开发者,true,https://github.com/streamlink/streamlink,Streamlink,https://github.com/streamlink/streamlink,Python,CLI utility which pipes video streams from various services into a video player
+youtube-15,YouTube,15,productivity-tools,效率与工具,false,,Transpose,https://transpose.video/,Extension,"Pitch shifter, speed changer and looper for online videos like YouTube."
+youtube-16,YouTube,16,productivity-tools,效率与工具,false,,Unhook,https://chromewebstore.google.com/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid,Extension,"Remove YouTube Recommended Videos, Comments, etc."
+youtube-17,YouTube,17,alternative-client,替代客户端,false,,YMusic Android,https://ymusic.io/,Android,Music player with offline and download capabilities
+youtube-18,YouTube,18,productivity-tools,效率与工具,true,https://github.com/soimort/you-get,You-Get,https://you-get.org/,Python,Command-line utility to download media contents
+youtube-19,YouTube,19,productivity-tools,效率与工具,false,,Yout,https://yout.com/,Web,Record any YouTube video into an Mp3 or Mp4
+youtube-20,YouTube,20,for-developers,面向开发者,true,https://github.com/ytdl-org/youtube-dl/,youtube-dl,https://github.com/ytdl-org/youtube-dl/,Python,Command-line program to download videos
+youtube-21,YouTube,21,for-developers,面向开发者,true,https://github.com/kkdai/youtube,youtubedr,https://github.com/kkdai/youtube,Go,Video downloader in go
+youtube-22,YouTube,22,productivity-tools,效率与工具,true,https://github.com/Tyrrrz/YoutubeDownloader,YoutubeDownloader,https://github.com/Tyrrrz/YoutubeDownloader,Windows,Downloads videos and playlists
+youtube-23,YouTube,23,for-developers,面向开发者,true,https://github.com/Tyrrrz/YoutubeExplode,YoutubeExplode,https://github.com/Tyrrrz/YoutubeExplode,C#,query metadata of YouTube videos
+youtube-24,YouTube,24,for-developers,面向开发者,true,https://github.com/yt-dlp/yt-dlp,yt-dlp,https://github.com/yt-dlp/yt-dlp,Python,A youtube-dl fork with additional features and fixes
